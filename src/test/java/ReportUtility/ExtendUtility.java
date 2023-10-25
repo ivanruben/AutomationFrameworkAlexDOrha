@@ -64,7 +64,7 @@ public class ExtendUtility {
                         .build());
     }
     private static synchronized String getScreenShot(WebDriver driver, String reportName){
-        String path = PathProject +reportName+".pgn";
+        String path = PathProject +reportName+".jpg";
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         byte[] imageByte=null;
         try {

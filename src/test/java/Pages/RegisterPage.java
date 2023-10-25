@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class RegisterPage extends BasedPage {
 
@@ -125,7 +126,12 @@ public class RegisterPage extends BasedPage {
     }
 
     public void clickConsent(){
-        elementMethodes.clickElement(consentElement);
+        try {
+            consentElement.click();
+        }
+        catch (NoSuchElementException ignored){
+        }
+        //elementMethodes.clickElement(consentElement);
         LoggerUtility.infoTest("User cklics on Consent button");
     }
 }
