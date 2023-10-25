@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class WindowPage extends BasedPage {
@@ -25,7 +24,7 @@ public class WindowPage extends BasedPage {
     @FindBy(css = "#Multiple>button")
     private WebElement tabsOptionElement;
 
-    public void interactSingeTab() {
+    public void interactSingleTab() {
         elementMethodes.clickElement(tabOptions.get(0));
         System.out.println(driver.getTitle());
         elementMethodes.clickElement(tabOptionElement);
@@ -36,7 +35,8 @@ public class WindowPage extends BasedPage {
 
     }
 
-    public void interactSingeWindow() {
+    public void interactSingleWindow() {
+        driver.navigate().to("https://demo.automationtesting.in/Windows.html");
         elementMethodes.clickElement(tabOptions.get(1));
         elementMethodes.clickElement(WindowOption2Element);
         System.out.println(driver.getTitle());

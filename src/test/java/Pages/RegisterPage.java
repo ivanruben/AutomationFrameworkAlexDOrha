@@ -116,11 +116,11 @@ public class RegisterPage extends BasedPage {
 
     public void navigateToWindow(){
         elementMethodes.moveToElement(switchToElement);
-        LoggerUtility.infoTest("The user moves the focus to Window");
+        //LoggerUtility.infoTest("The user moves the focus to Window");
         elementMethodes.clickElement(windowElement);
-        LoggerUtility.infoTest("The user clicks on Window");
+        //LoggerUtility.infoTest("The user clicks on Window");
         driver.navigate().to("https://demo.automationtesting.in/Windows.html");
-        LoggerUtility.infoTest("The user navigates to Window");
+        //LoggerUtility.infoTest("The user navigates to Window");
 
     }
 

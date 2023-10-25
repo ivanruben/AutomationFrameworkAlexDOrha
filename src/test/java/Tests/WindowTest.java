@@ -20,8 +20,8 @@ public class WindowTest extends Hooks {
         registerPage.navigateToWindow();
 
         WindowPage windowPage = new WindowPage(getDriver());
-        windowPage.interactSingeTab();
-        windowPage.interactSingeWindow();
+        windowPage.interactSingleTab();
+        windowPage.interactSingleWindow();
         windowPage.interactMultipleTab();
 
     }
