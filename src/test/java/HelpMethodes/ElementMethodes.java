@@ -34,6 +34,7 @@ public class ElementMethodes {
             System.out.println(e.getMessage());
         }
     }
+
     public void fillElement(WebElement element, String text){
         waitVisibleElement(element);
         element.sendKeys(text);
