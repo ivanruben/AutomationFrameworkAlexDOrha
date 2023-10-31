@@ -69,11 +69,17 @@ public class RegisterPage extends BasedPage {
                                   List<String> languageValues, String skillValue, String countryValue,
                                   String yearDOBvalue, String monthDOBvalue, String dayDOBvalue, String passwordValue , String renterPasswordValue){
         elementMethodes.fillElement(firstNameElement,firstNameValue);
+        LoggerUtility.infoTest("The user fills in the first name field with value: "+firstNameValue);
         elementMethodes.fillElement(lastNameElement,lastNameValue);
+        LoggerUtility.infoTest("The user fills in the last name field with value: "+lastNameValue);
         elementMethodes.fillElement(addresNameElement, adressValue);
+        LoggerUtility.infoTest("The user fills in the address field with value: "+adressValue);
         elementMethodes.fillElement(phoneElement,phoneValue);
+        LoggerUtility.infoTest("The user fills in the phone field with value: "+phoneValue);
         elementMethodes.clickElement(maleElement);
+        LoggerUtility.infoTest("The user clicks on male element");
         elementMethodes.fillElement(emailAdressElement,emailVlue);
+        LoggerUtility.infoTest("The user fills in the email field with value: "+emailVlue);
         for (int index = 0; index < hobbiesElement.size(); index++) {
             hobbiesElement.get(index).click();
         }
